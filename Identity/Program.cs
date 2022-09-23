@@ -40,8 +40,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddAuthentication().AddGoogle(googleOptions =>
 {
-    googleOptions.ClientId = "86983169696-0jfqkgle1pve5s3hftle8i6dliikcf01.apps.googleusercontent.com";
-    googleOptions.ClientSecret = "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";
+    googleOptions.ClientId = "701537630786-2nkmv69u6ge3hnq24d3ptshae82h8k5r.apps.googleusercontent.com";
+    googleOptions.ClientSecret = "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";
 });
 
 var app = builder.Build();
@@ -58,7 +58,7 @@ else
     app.UseHsts();
 }
 
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
